@@ -1,53 +1,3 @@
-// "use client"
-
-// import { useRef } from "react"
-// import { motion, useScroll, useTransform } from "framer-motion"
-
-// const ParallaxSection = ({ text, bgImage }) => {
-//   const ref = useRef(null)
-//   const { scrollYProgress } = useScroll({
-//     target: ref,
-//     offset: ["start start", "end start"],
-//   })
-
-//   const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
-
-//   return (
-//     <div ref={ref} className="h-screen relative overflow-hidden">
-//       <motion.div
-//         style={{
-//           y,
-//           backgroundImage: `url(${bgImage})`,
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//         }}
-//         className="absolute inset-0"
-//       />
-//       <div className="absolute inset-0 flex items-center justify-center">
-//         <motion.div
-//           initial={{ opacity: 0, y: 50 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 1 }}
-//           className="text-4xl text-white text-center p-8 bg-black bg-opacity-50 rounded-lg"
-//         >
-//           {text}
-//         </motion.div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default function ParallaxHero() {
-//   return (
-//     <div>
-//       <ParallaxSection text="It all started when I met you…" bgImage="/rose day.jpg?height=1080&width=1920" />
-//       <ParallaxSection text="Every moment with you is special." bgImage="/placeholder.svg?height=1080&width=1920" />
-//       <ParallaxSection text="You are the best part of my life." bgImage="/placeholder.svg?height=1080&width=1920" />
-//     </div>
-//   )
-// }
-
-
 
 "use client";
 
@@ -64,12 +14,6 @@ function BeatingHeart() {
     const beat = 1 + 0.1 * Math.sin(clock.getElapsedTime() * 3);
     setScale(beat);
   });
-
-  // return (
-  //   <Sphere ref={heartRef} args={[1, 64, 64]} scale={scale}>
-  //     <MeshDistortMaterial color="red" distort={0.3} speed={2} emissive="red" emissiveIntensity={0.6} />
-  //   </Sphere>
-  // );
 }
 
 export default function HeroSection() {
@@ -79,7 +23,7 @@ export default function HeroSection() {
 {[...Array(10)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute text-red-500 text-3xl"
+          className="absolute bottom-20 text-red-500 text-3xl"
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
@@ -94,6 +38,14 @@ export default function HeroSection() {
         <BeatingHeart />
       </Canvas> */}
       <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="absolute bottom-36 text-4xl font-semibold text-red-300"
+      >
+        "That's my heart, beats for you ❤"
+      </motion.div>
+      <motion.div
           animate={{
             scale: [1, 1.2, 1],
             opacity: [1, 0.8, 1],
@@ -107,14 +59,8 @@ export default function HeroSection() {
         >
           ❤️
         </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="absolute bottom-20 text-4xl font-semibold text-red-400"
-      >
-        "That's my heart, beats for you ❤"
-      </motion.div>
+      
     </div>
   );
 }
+
