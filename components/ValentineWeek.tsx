@@ -73,7 +73,7 @@ const gifts: Gift[] = [
     day: "Valentine's Day",
     emoji: "❤️",
     message: "My heart belongs to you, today and always.",
-    image: "/valentine.jpg",
+    image: "/v.jpg",
     description:
       "On this special day, I celebrate you and the love we share. You're my valentine today and every day.",
   },
