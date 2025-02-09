@@ -1,5 +1,4 @@
-<h1>Hello </h1>
-# 💖 Love Letter Website
+<h1># 💖 Love Letter Website </h1>
 
 A romantic, interactive website built with React and Framer Motion, created as a digital love letter for Valentine's Day. It features a parallax scrolling effect, a fun couples' quiz, and adorable animations to make it extra special. 💘
 
@@ -18,21 +17,6 @@ A romantic, interactive website built with React and Framer Motion, created as a
 - TypeScript
 - GitHub Pages (for deployment)
 
-## 🚀 Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/love-letter-website.git
-   cd love-letter-website
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open your browser and visit `http://localhost:3000`
 
 ## 📌 How to Play the FLAMES Game
 1. Enter your name and your partner's name.
