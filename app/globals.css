@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Handwriting";
+  src: url("/fonts/Pacifico-Regular.ttf") format("truetype");
+}
+
+.font-handwriting {
+  font-family: "Handwriting", cursive;
+}
+
+/* body {
+  @apply bg-pink-50;
+} */
+
+.mask-clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.about-image {
+  @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+}
+.animated-title {
+  @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+}
+
+
+
+/* Add any additional global styles here */
+
