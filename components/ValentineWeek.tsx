@@ -126,7 +126,7 @@ export default function ValentineWeek() {
   return (
     <div className="bg-pink-100 py-16">
       <h2 className="text-3xl font-bold text-center mb-12">
-        7 Days of Valentine's Week Gifts 🎁❤️
+        Here is your <br></br> Valentine's Week Gifts 🎁❤️
       </h2>
       <div className="max-w-6xl mx-auto px-4">
         <div className="relative">
