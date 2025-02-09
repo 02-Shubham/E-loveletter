@@ -22,12 +22,23 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>([])
   const [inputValue, setInputValue] = useState("")
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const lastIndexRef = useRef<number | null>(null) // Store last response index
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
-  useEffect(scrollToBottom, [])
+  useEffect(scrollToBottom, [messages])
+
+  const getRandomResponse = () => {
+    let newIndex
+    do {
+      newIndex = Math.floor(Math.random() * flirtyResponses.length)
+    } while (newIndex === lastIndexRef.current) // Ensure it's different
+
+    lastIndexRef.current = newIndex // Update last index
+    return flirtyResponses[newIndex]
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -35,7 +46,7 @@ export default function Chatbot() {
       setMessages([...messages, { text: inputValue, isUser: true }])
       setInputValue("")
       setTimeout(() => {
-        const botReply = flirtyResponses[Math.floor(Math.random() * flirtyResponses.length)]
+        const botReply = getRandomResponse()
         setMessages((prev) => [...prev, { text: botReply, isUser: false }])
       }, 1000)
     }
@@ -59,7 +70,7 @@ export default function Chatbot() {
           >
             <div className="bg-red-500 text-white p-4">
               <h3 className="text-lg font-bold">Flirty Chatbot</h3>
-              <h6 className="text-md">send any thing it will reply Flirty line.</h6>
+              <h6 className="text-md">Send anything, and it will reply with a flirty line.</h6>
             </div>
             <div className="h-96 overflow-y-auto p-4">
               {messages.map((message, index) => (

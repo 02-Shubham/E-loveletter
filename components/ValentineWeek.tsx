@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -128,6 +128,7 @@ export default function ValentineWeek() {
       <h2 className="text-3xl font-bold text-center mb-12">
         Here is your <br></br> Valentine's Week Gifts 🎁❤️
       </h2>
+      <h3 className="text-3xl font-bold text-center text-pink-100 mb-12">Avg. ChutPagalu week</h3>
       <div className="max-w-6xl mx-auto px-4">
         <div className="relative">
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-300 -translate-y-1/2" />

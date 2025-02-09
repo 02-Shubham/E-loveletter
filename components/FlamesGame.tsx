@@ -125,6 +125,7 @@ export default function FlamesGame() {
   return (
     <div className="bg-pink-100 p-10">
         <h2 className="font-bold text-[30px] bmb-5 ml-5">Hey if you are still not sure<br></br> you can check our names on flames...</h2>
+        <h3 className="text-center text-pink-100">Ye wali game to School mei bhi nahi khela</h3>
         <div className="p-6 bg-pink-100 shadow-lg rounded-lg max-w-md mx-auto text-center">
       <h2 className="text-2xl font-bold mb-4">🔥 FLAMES Game 🔥</h2>
       <input

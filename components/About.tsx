@@ -33,6 +33,7 @@ const About = () => {
           Us When ??
         </p> */}
         <h1 className="text-white text-[40px] ">Us When??</h1>
+        <h3 className="text-black text-[20px] ">Shubham bhai this can't be possible :/</h3>
 
         {/* <AnimatedTitle
           title="Us When??"
