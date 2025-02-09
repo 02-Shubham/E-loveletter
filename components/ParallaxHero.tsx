@@ -75,6 +75,21 @@ function BeatingHeart() {
 export default function HeroSection() {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center bg-black text-white relative">
+
+{[...Array(10)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute text-red-500 text-3xl"
+          style={{
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+          }}
+          animate={{ y: [0, -30, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
+        >
+          ❤️
+        </motion.div>
+      ))}
       {/* <Canvas>
         <BeatingHeart />
       </Canvas> */}
@@ -96,7 +111,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="absolute bottom-20 text-3xl font-semibold text-red-400"
+        className="absolute bottom-20 text-4xl font-semibold text-red-400"
       >
         "That's my heart, beats for you ❤"
       </motion.div>

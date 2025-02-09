@@ -9,7 +9,7 @@ From the moment our paths crossed, my life has been filled with an indescribable
 
 Every day with you is an adventure, a beautiful journey that I never want to end. You are my confidant, my best friend, and my soulmate. Your love gives me strength, and your presence gives me peace.
 
-I promise to stand by your side through thick and thin, to love you unconditionally, and to cherish every moment we share. You are the missing piece of my heart, and I am grateful for your love every single day.
+I promise to stand by your side through thick and thin, to love you unconditionally,but i really don't why i am making this website i hope i would win and to cherish every moment we share. You are the missing piece of my heart, and I am grateful for your love every single day.
 
 I love you more than words can express, and I look forward to creating a lifetime of beautiful memories with you.
 
@@ -70,9 +70,10 @@ export default function LoveLetter() {
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "reverse",
             }}
-            className="text-9xl"
+            className="text-6xl text-center"
           >
-            ❤️
+            ❤️<br></br>
+            Hey GDG ppl , kaisa hai website??
           </motion.div>
         </motion.div>
       )}

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, ReactNode } from "react"
 import { FaMusic, FaVolumeMute } from "react-icons/fa"
 import Chatbot from "./Chatbot"
+import { motion } from "framer-motion"
 
 interface LayoutProps {
   children: ReactNode
@@ -23,6 +24,20 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="relative">
+      {[...Array(10)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute text-red-500 text-3xl"
+          style={{
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+          }}
+          animate={{ y: [0, -30, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
+        >
+          ❤️
+        </motion.div>
+      ))}
       {children}
 
       {/* Hidden Audio Element */}

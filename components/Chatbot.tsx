@@ -59,6 +59,7 @@ export default function Chatbot() {
           >
             <div className="bg-red-500 text-white p-4">
               <h3 className="text-lg font-bold">Flirty Chatbot</h3>
+              <h6 className="text-md">send any thing it will reply Flirty line.</h6>
             </div>
             <div className="h-96 overflow-y-auto p-4">
               {messages.map((message, index) => (
