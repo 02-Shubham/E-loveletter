@@ -40,7 +40,7 @@ A romantic, interactive website built with React and Framer Motion, created as a
 3. The game will reveal your FLAMES result! ❤️
 
 ## 🌍 Live Demo
-🔗 [View Live Website](https://your-username.github.io/love-letter-website/)
+🔗 [View Live Website](https://e-loveletter.vercel.app/)
 
 ## 🤝 Contributing
 Feel free to contribute! Fork the repo, make your changes, and submit a pull request.
@@ -51,4 +51,6 @@ This project is open-source and available under the MIT License.
 ---
 
 💌 **Made with love for Valentine's Day!** 💕
+💌 **Made with love for GDG Valentine's Day Challenge!** 💕
+
 
