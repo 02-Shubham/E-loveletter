@@ -48,7 +48,6 @@ export default function Layout({ children }: LayoutProps) {
         onClick={() => setIsMusicPlaying(!isMusicPlaying)} 
         className="fixed bottom-4 left-4 bg-white p-3 rounded-full shadow-lg"
       >
-        {/* {isMusicPlaying ? <FaVolumeMute size={24} /> : <FaMusic size={24} />} */}
         {isMusicPlaying ? <h1><FaVolumeMute size={16}/>OFF</h1> : <h1><FaMusic size={16}/> ON</h1>}
       </button>
 

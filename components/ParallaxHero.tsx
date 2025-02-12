@@ -34,9 +34,6 @@ export default function HeroSection() {
           ❤️
         </motion.div>
       ))}
-      {/* <Canvas>
-        <BeatingHeart />
-      </Canvas> */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

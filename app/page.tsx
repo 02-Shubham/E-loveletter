@@ -10,6 +10,7 @@ import ValentineParallax from "@/components/Valentinequiz"
 import About from "@/components/About"
 import FlamesGame from "@/components/FlamesGame"
 import { motion } from "framer-motion"
+import MemoryGallery from "@/components/MemoryGallery"
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -34,6 +35,7 @@ export default function Home() {
       <LoveLetter />
       <ValentineParallax/>
       <FlamesGame/>
+      <MemoryGallery />
     </Layout>
   )
 }
