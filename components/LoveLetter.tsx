@@ -73,7 +73,7 @@ export default function LoveLetter() {
             className="text-6xl text-center"
           >
             ❤️<br></br>
-            Hey GDG ppl , kaisa hai website??
+            vishal Chutyia hai 
           </motion.div>
         </motion.div>
       )}

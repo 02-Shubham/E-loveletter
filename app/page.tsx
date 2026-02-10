@@ -33,8 +33,8 @@ export default function Home() {
       <About/>
       <ValentineWeek />
       <LoveLetter />
-      <ValentineParallax/>
-      <FlamesGame/>
+      {/* <ValentineParallax/>
+      <FlamesGame/> */}
       <MemoryGallery />
     </Layout>
   )

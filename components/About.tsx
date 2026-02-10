@@ -29,14 +29,14 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen  bg-black w-screen">
       <div className="relative mb-8 flex flex-col items-center gap-5">
-        <h1 className="text-white text-[40px] ">Us When??</h1>
-        <h3 className="text-black text-[20px] ">Shubham bhai this can't be possible :/</h3>
+        <h1 className="text-white text-[40px] ">You are Best</h1>
+        <h3 className="text-black text-[20px] "></h3>
 
       </div>
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
-            src="hug.jpg"
+            src="blur.png"
             alt="Background"
             className="absolute left-0 top-0 size-full object-cover"
           />

@@ -7,11 +7,11 @@ import { motion } from "framer-motion"
 import Modal from "./Modal"
 
 const memories = [
-  { id: 1, src: "/Moviedate.webp?height=350&width=350", alt: "Movie Date", caption: "Movie Date"},
-  { id: 2, src: "/Ourfirstdate.jpeg?height=400&width=300", alt: "Our first date", caption: "Our first date" },
-  { id: 3, src: "/Beachvacation.webp?height=350&width=350", alt: "Beach vacation", caption: "Beach vacation" },
-  { id: 4, src: "/Cookingtogether.jpeg?height=400&width=300", alt: "Cooking together", caption: "Cooking together" },
-  { id: 5, src: "/Stargazingnight.jpg?height=300&width=400", alt: "Stargazing night", caption: "Stargazing night" },
+  { id: 1, src: "/Image copy.png?height=500&width=500", alt: "Movie Date", caption: "Movie Date"},
+  { id: 2, src: "/first.png?height=400&width=300", alt: "Our first date", caption: "Our first date" },
+  { id: 3, src: "/shopping.png?height=350&width=350", alt: "Shopping", caption: "Shopping" },
+  { id: 4, src: "/four.png?height=400&width=300", alt: "Cooking together", caption: "Cooking together" },
+  { id: 5, src: "/blur.png?height=300&width=400", alt: "Stargazing night", caption: "Us" },
   { id: 6, src: "/First concert.jpg?height=350&width=350", alt: "First concert", caption: "First concert" },
  
 ]
