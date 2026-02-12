@@ -12,7 +12,7 @@ const memories = [
   { id: 3, src: "/shopping.png?height=350&width=350", alt: "Shopping", caption: "Shopping" },
   { id: 4, src: "/four.png?height=400&width=300", alt: "Cooking together", caption: "Cooking together" },
   { id: 5, src: "/blur.png?height=300&width=400", alt: "Stargazing night", caption: "Us" },
-  { id: 6, src: "/First concert.jpg?height=350&width=350", alt: "First concert", caption: "First concert" },
+  { id: 6, src: "/oyeee.png?height=550&width=350", alt: "First concert", caption: "Black and White" },
  
 ]
 

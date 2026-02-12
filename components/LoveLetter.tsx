@@ -3,18 +3,18 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
-const loveLetter = `My Dearest,
+const loveLetter = `My Cutie,
 
 From the moment our paths crossed, my life has been filled with an indescribable joy. Your smile brightens my darkest days, and your laughter is the sweetest melody to my ears.
 
 Every day with you is an adventure, a beautiful journey that I never want to end. You are my confidant, my best friend, and my soulmate. Your love gives me strength, and your presence gives me peace.
 
-I promise to stand by your side through thick and thin, to love you unconditionally,but i really don't why i am making this website i hope i would win and to cherish every moment we share. You are the missing piece of my heart, and I am grateful for your love every single day.
+I promise to stand by your side through thick and thin, to love you unconditionally,but to cherish every moment we share. You are the missing piece of my heart, and I am grateful for your love every single day.
 
 I love you more than words can express, and I look forward to creating a lifetime of beautiful memories with you.
 
 Forever yours,
-Shubham `
+Pookiee `
 
 export default function LoveLetter() {
   const [visibleText, setVisibleText] = useState("")
@@ -73,7 +73,7 @@ export default function LoveLetter() {
             className="text-6xl text-center"
           >
             ❤️<br></br>
-            vishal Chutyia hai 
+            500 Bhej 
           </motion.div>
         </motion.div>
       )}

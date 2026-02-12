@@ -2,11 +2,11 @@ import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const questions = [
-  { question: "What's my favorite color?", answer: "Red" },
-  { question: "What's my favorite food?", answer: "Pizza" },
-  { question: "Where did we first meet?", answer: "College" },
-  { question: "What's my dream vacation destination?", answer: "Paris" },
-  { question: "What’s my favorite movie?", answer: "The Notebook"}
+  { question: "What's my favorite color?", answer: "Blue" },
+  { question: "What's my favorite food?", answer: "You" },
+  { question: "Where did we first meet?", answer: "GDG Interview" },
+  { question: "What's my dream vacation destination?", answer: "You" },
+  { question: "What’s my favorite movie?", answer: "You"}
 ];
 
 const ValentineParallax = () => {

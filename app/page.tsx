@@ -31,10 +31,10 @@ export default function Home() {
     <Layout>
       <ParallaxHero />
       <About/>
-      <ValentineWeek />
+      {/* <ValentineWeek /> */}
       <LoveLetter />
-      {/* <ValentineParallax/>
-      <FlamesGame/> */}
+      <ValentineParallax/>
+      {/* <FlamesGame/> */}
       <MemoryGallery />
     </Layout>
   )
